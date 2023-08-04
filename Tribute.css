@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+
+ 
+body{
+    background-color:blue;
+    color:#333333;
+    font-family: 'REM', sans-serif;;
+    
+}
+ 
+
+ 
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 600px;
+    margin:auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    overflow-x: hidden; /* Hide the vertical scrollbar */
+    background-color: #fff;
+    padding: 20px;
+}
+
+  .image{  
+    
+    background-image: url(https://wallpapers.com/images/hd/mountain-landscape-sunrise-6tlr4cfeg3q0al8n.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100%;
+    margin:auto;
+    background-size: cover;
+    background-position: center;
+    
+}
+.image img{  
+  display:flex;
+   width: 30%;
+   height:200px;
+   margin:0 auto 16%; 
+   border-radius: 50%;
+   background: transparent;
+
+ 
+} 
+.image h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 2px;
+    color: #52f00f;
+}
+
+ 
+.matter h4{
+    text-align: center;
+    background-color:#41ed1f;
+    padding:10px;
+    color:rgb(21, 30, 156);
+     font-size: larger;    
+}
+.matter div {
+    text-align: justify;
+    line-height: 2rem;
+    word-spacing: 7px;
+    padding:10px;
+}
+
+.flower-icon{
+    color: #effa1c;
+    padding: 1rem;
+} 
+@media screen and (min-width: 1200px) {
+    body{
+        background-color: #df1507;
+         
+    }
+    .image{ 
+        display:grid; 
+         background-size:100%;
+        background-position: cover;
+    }
+    .image img{  
+        display:flex;
+         width: 20%;
+         height:250px;
+         margin:0 auto 16%; 
+
+      } 
+      .image h1{
+        
+        color: #f0700f;
+    }
+    .flower-icon{
+        color: #32da08;
+        padding: 1rem;
+    } 
+    
+
+}
+@media screen and (max-width: 700px){
+    body{
+        background-color: #d6d916;
+    }
+    .image{ 
+        display:grid; 
+         background-size:100%;
+        background-position: cover;
+    }
+    .image img{  
+        display:flex;
+         width: 30%;
+         height:150px;
+         margin: auto 15; 
+      } 
+      .flower-icon{
+        color: #32da08;
+        padding: 0.2rem;
+    } 
+    .image h1{
+         
+        font-size: large;
+    }
+}
